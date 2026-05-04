@@ -98,3 +98,6 @@ document.addEventListener("DOMContentLoaded", () => {
     renderList();
     updateDashboard();
 });
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js');
+} 
