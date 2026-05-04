@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d15811; /* Matching your app's light grey vibe */
+}
+/* --- TOP HEADER GLOW-UP --- */
+header {
+    background: linear-gradient(135deg, #000000 0%, #000000 100%);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    
+    /* ADD THIS LINE BELOW */
+    margin-bottom: 20px; 
+}
+header h1 {
+    margin: 0;
+    font-size: 20px; /* Slightly larger */
+    letter-spacing: 3px; /* This makes it look really modern */
+    font-weight: 800;
+    color: #ffffff; /* Darker blue-grey for better contrast */
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.897); /* Subtle 'pop' */
+}
+* { box-sizing: border-box; } 
+
+main {
+    flex: 1; /* This pushes the footer to the bottom */
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #bdb7b277;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* The Blue Header */
+.main-header {
+    background: linear-gradient(135deg, #000000 0%, #000000 100%);
+    padding: 15px;
+    text-align: center;
+    border-bottom: 5px solid #f17611;
+}
+
+/* The Container for Sidebar + Form */
+.content {
+    display: flex;
+    flex: 1; /* Takes up remaining height */
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 300px;
+    background: rgba(255, 253, 250, 0.466);
+    border-right: 1px solid #e07f115d;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: auto;
+}
+
+/* Ensure the list items look like the blue boxes we had before */
+.pc-item {
+    background: rgb(219, 129, 10);
+    padding: 16px;
+    margin-bottom: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid #e6870bb2;
+    transition: all 0.2s ease; /* Smooth hover effect */
+    color: #333;
+}
+
+.pc-item:hover {
+    border-color: #d47800bb;
+    background: #e48a15;
+    transform: translateX(5px); /* Tiny slide in effect */
+}
+
+/* Style for the active item so you know what's selected */
+/* --- THE MAIN TOP HEADER --- */
+header {
+    background: linear-gradient(135deg, #00000086 0%, #b44a03 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid #a3c9f1;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+    letter-spacing: 20px;
+    font-weight: 800;
+    color: #f0f0f0;
+    text-transform: uppercase;
+}
+.pc-item.active {
+    background: #d49b00;
+    color: rgb(231, 106, 22);
+    border-color: #000000;
+}
+.search-bar {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+/* PC List Items */
+.pc-item {
+    background: #e7760b21;
+    padding: 15px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+.pc-item:hover {
+    background: #ce6e1477;
+}
+
+/* The Detail Panel on the Right */
+.details-panel {
+    flex: 1;
+    padding: 40px;
+    background-color: #e6762c15;
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+}
+
+/* Input Styles */
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+}
+#save-btn {
+    /* Colors and Text */
+    background-color: #a54d05; /* A nice professional blue */
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    
+    /* Sizing and Shape */
+    padding: 8px 18px;
+    border-radius: 6px;       /* Smooth rounded corners */
+    cursor: pointer;          /* Changes mouse to a hand */
+    
+    /* Spacing */
+    margin-top: 15px;
+    
+    /* Animation */
+    transition: all 0.2s ease; /* Makes the hover effect smooth */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* When you hover your mouse over it */
+#save-btn:hover {
+    background-color: #af490585; /* Slightly darker blue */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px); /* Subtle "lift" effect */
+}
+
+/* When you actually click it */
+#save-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+input[type="text"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #be6d2b;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none; /* Removes the default blue ring */
+}
+
+input[type="text"]:focus {
+    border-color: #0078d4; /* Matches your button color when clicking */
+    box-shadow: 0 0 0 2px rgba(0, 120, 212, 0.2);
+/* This targets the container and the table directly */
+}
+
+.status-dashboard, #status-table {
+    display: block;
+    background-color: #ffffff !important;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#status-table {
+    display: table; /* Forces it to behave like a table */
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#status-table th {
+    background: linear-gradient(135deg, #000000 0%, #000000 100%);
+    color: rgb(255, 255, 255) !important;
+    padding: 12px;
+    text-align: left;
+    border-bottom: 5px solid #ff8800;
+}
+
+#status-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+}
+
+/* Status bubbles */
+.status-tag {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.borrowed { background-color: #f8d7da; color: #721c24; }
+.available { background-color: #d4edda; color: #155724; }
+
+/* Hover effect for the status buttons */
+.status-tag:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+.status-tag:active {
+    transform: scale(0.95);
+}
+
+/* Ensure the button looks like the tags in your image */
+button.status-tag {
+    font-family: inherit;
+    display: inline-block;
+    min-width: 80px;
+    text-align: center;
+}
+/* Style for the selected camera block */
+.pc-item.selected {
+    background-color: #d35400; /* A darker, more vibrant orange */
+    color: white;              /* White text for better contrast */
+    border: 2px solid #a04000; /* A slightly darker border */
+    transform: scale(1.02);    /* Makes it pop out slightly */
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.2); /* Gives it a "pressed" feel */
+}

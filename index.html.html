@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kamera Utlån</title>
+    <link rel="icon" href="data:;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=?v=2">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" href="favicon.png">
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="main-header">
+            <h1>KAMERA TIL UTLÅN</h1>
+        </header>
+
+        <div class="content">
+            <!-- Sidebar: The List -->
+           <aside class="sidebar">
+    <div id="pc-list">
+        <!-- Items will be injected here by JS -->
+    </div>
+</aside>
+
+            <!-- Main: The Details Form -->
+            <main class="details-panel">
+                <div class="form-header">
+                    <h2 id="selected-id">VELG ETT KAMERA</h2>
+                    <div class="actions"></div>
+                </div>
+                <form id="loan-form">
+                    <div class="input-group">
+                        <label>Navn</label>
+                        <input type="text" id="title-input">
+                    </div>
+                    <div class="input-group">
+                        <label>Serienummer</label>
+                        <input type="text" id="serial-input">
+                    </div>
+                    <div class="input-group">
+                        <label>Dato</label>
+                        <input type="text" id="serial-input">
+                    </div>
+                    <div class="input-group">
+                        <label>Tid</label>
+                        <input type="text" id="serial-input">
+                    </div>
+                <!-- Check line 39 in your index.html -->
+<button type="button" id="save-btn">
+    Lagre
+</button>
+                </form>
+            </main>
+        </div>
+    </div>
+<div class="status-dashboard">
+    <h3>Oversikt</h3>
+    <table id="status-table"> <!-- MAKE SURE THIS ID IS HERE -->
+        <thead>
+            <tr>
+                <th>Kamera</th>
+                <th>Status</th>
+                <th>Lånt av</th>
+                <th>Dato</th>
+            </tr>
+        </thead>
+        <tbody id="status-body"></tbody> <!-- JS NEEDS THIS ID -->
+    </table>
+</div>   
+
+<script src="script.js"></script>
+</body>
+</html>
+
+ 
